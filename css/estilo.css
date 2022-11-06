@@ -1,0 +1,339 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	
+}
+.body{
+	background-color: var(--color);
+}
+:root{
+	--color:#0e3269 ;
+	--gris: #f1ede8;
+}/*
+.part{
+	margin-top: 115px;
+}
+*/
+.sh{
+	box-shadow: 0px 0px 10px 0px #000;
+}
+.bac{
+	margin-left: 0;
+}
+.c{
+	background-color:var(--color);
+}
+.w{
+	background-color: var(--gris);
+}
+#center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cent{
+	margin: 0 auto;
+}
+.Logo{
+	width: 230px;
+	height: 230px;
+	margin-top: 25px;
+
+}
+.titulo {
+	text-align: center;
+	font-size: (2em + 1vw);
+	color: white;
+	font-family: coco gothic;
+	letter-spacing: 2px;
+}
+.title{
+	color: white;
+	text-align: center;
+}
+
+.boton-contac:hover{
+	background: var(--color);
+} 
+
+.delantal{
+	max-height: 500px;
+	max-width: 500px;
+	margin-top: 2em;
+}
+.asd{
+	margin-right: auto !important;
+  	margin-left: auto !important;
+	
+}
+@media screen and (max-width: 240px){
+	.delantal{
+		height: 100px;
+		width: 100px;
+	}
+	.asd{
+	margin-right:0 ;
+  	margin-left: 0;
+
+	}
+}
+
+/*
+--------------------------------------------------v
+segundo contenedor
+--------------------------------------------------v
+*/
+.seg-title{
+	font-size: (2em + 1vw);
+	line-height: 1.5em;
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+}
+/*
+--------------------------------------------------v
+tercer contenedor
+--------------------------------------------------v
+*/
+.img-3{
+	width: auto;
+	height: auto;
+	background: var(--color);
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap ;
+}
+.h3cen{
+	text-align: center;
+	color: #000;
+}
+div h4{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+ .imagen11{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	
+	flex-grow: 1;
+}
+
+/*
+--------------------------------------------------v
+cuarta contenedor
+--------------------------------------------------v
+*/
+.textos{
+	padding: 1em;
+	font-size: (2em + 1vw);
+	margin: auto;
+}
+/*
+--------------------------------------------------v
+quinta contenedor
+--------------------------------------------------v
+*/
+.contenedor5{
+	display: flex;
+	height: auto;
+	width: 100%;
+	background: var(--color);
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+.cont-item1{
+	flex-grow: 1;
+}
+.cont-img1{
+	margin: 10px;
+}
+.picada{
+	width: 500px;
+	height: 600px;
+
+}
+.cont-text1{
+	margin: 10px;
+}
+.textos2{
+	padding: auto;
+	font-size: calc(2em + 1vw);
+	text-align: center;
+	color: white;
+}
+@media screen and (max-width: 240px){
+	.textos2{
+		font-size: calc(1em + 1vw);
+	}
+}
+/*
+--------------------------------------------------v
+sexta contenedor
+--------------------------------------------------v
+*/
+
+.cont6-div{
+	margin: 15px;
+	margin-left: 25px;
+}
+.cont6-text2{
+	font-size: calc(2em + 1vw);
+	color: #fff;
+}
+/*
+--------------------------------------------------v
+contenedor general 
+--------------------------------------------------v
+*/
+
+.img-gen-items{
+	width: 300px;
+	height: 400px;
+	box-shadow: 0px 0px 20px 0px #000;;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+.img-gen1{
+	width: 300px;
+	height: 400px;	
+	box-shadow: 0px 0px 20px 0px #000;
+
+}
+
+.img-4{
+	width: 300px;
+	height: 400px;
+	margin-top: 10px;
+}
+.cc{
+	display: flex;
+	justify-content: center;
+}
+.pad{
+	padding: 5%;
+}
+/*
+--------------------------------------------------v
+septimo contenedor
+--------------------------------------------------v
+*/
+
+.form-text{
+	flex-grow: 5;
+	background: var(--color);
+	font-size: 2em;
+	
+}
+.form-text-h2 h2{
+	margin: 30px;
+	margin-top: 30px;
+	color: #fff;
+}
+
+
+
+.form{
+	padding: 30px;
+	text-align: center;
+}
+.form-input{
+	height: auto;
+	width: auto;
+	flex-grow: 9;
+	background: var(--color);	
+}
+
+.form-input-gen{
+	margin: 9px;
+	padding: 7px;
+	width: 80%;
+}
+.form-div-gen textarea{
+	min-height: 150px;
+	width: 80%;
+}
+
+/*
+--------------------------------------------------v
+OCTAVO contenedor
+--------------------------------------------------v
+*/
+.donde-text{
+	display: flex;
+	flex-wrap: wrap;
+	background: var(--gris);
+	flex-grow: 1;
+	justify-content: center;	
+}
+.donde-text1{
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+	padding: auto;
+	font-size: 2.2em;
+}
+.Logo2{
+	width: 200px;
+	height: 200px;
+}
+.donde-redes{
+	display: flex;
+	flex-wrap: wrap;
+	background: var(--gris);
+	flex-grow: 1;
+}
+/*
+tamaños
+*/
+
+.logitos{
+	height: 50px;
+	width: 50px;
+}
+.logitos2{
+	height: 60px;
+	width: 50px;
+}
+.logitos3{
+	width: 50px;
+	height: 70px;
+}
+
+.redes h5{
+	text-align: center;
+}
+
+
+.insta a {
+color: #000;
+}
+
+
+.whatsapp a{
+	color: #000;
+}
+/*
+.insta img{
+	float: left;
+}
+.whatsapp img{
+	float: left;
+}
+.ubicacion img{
+	float: left;
+}*/
+
+.ubicacion a{
+	color: #000;
+}
+
+.redes h5{
+	font-size: calc(.5em + 1vw);
+}
