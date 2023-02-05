@@ -1,0 +1,12 @@
+[
+   {
+    "id": 1,
+    "Nombre": "Pizza Party",
+    "Precio": 1500
+},
+{
+    "id": 2,
+    "Nombre": "Pernil Party",
+    "Precio": 1600
+}
+]

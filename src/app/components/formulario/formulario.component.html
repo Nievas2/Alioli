@@ -1,0 +1,271 @@
+<div class="row c" id="contactanos">
+  <div class="col-lg-5 col-md-12 col-sm-12" style="margin-top: 2em">
+    <div class="form-text-h2">
+      <h2 class="fs-2">Formulario de Contacto</h2>
+    </div>
+    <p class="text-white fs-4 p-3 text-sec">
+      Contanos un poco más sobre el evento que desea realizar, fecha y cantidad
+      de invitados aproximados que asistirán. <br />
+      Próximamente nos estaremos contactando para pasarse la información
+      correspondiente.
+    </p>
+  </div>
+
+  <div class="col-lg-7 col-md-12 col-sm-12">
+    <form [formGroup]="AlioliForm">
+      <form action="https://formsubmit.co/8ed6e6c2fb45ec30862922e6591ce05f" method="POST">
+        <div class="form-div-gen text-white">
+          <label for="name" class="form-label">Nombre y Apellido</label>
+          <input
+            type="text"
+            class="form-input-gen form-control"
+            id="name"
+            placeholder="ingrese su nombre"
+            
+            formControlName="name"
+            name="name"
+          />
+        </div>
+        <div class=" form-input-gen alert alert-danger"
+        *ngIf="name?.invalid && (name?.touched || name?.dirty)">
+        <div class="" *ngIf="name?.errors?.['required']">
+          Incompleto, Informacion requerida
+  
+        </div>
+        </div>
+  
+  
+        <div class="form-div-gen text-white">
+          <label for="telefono" class="form-label">Telefono</label>
+          <input
+            type="number"
+            class="form-input-gen form-control"
+            id="telefono"
+            placeholder="ingrese su Telefono"
+            formControlName="telefono"
+          name="telefono"
+          />
+        </div>
+        <div class="alert alert-danger form-input-gen"
+        *ngIf="telefono?.invalid && (telefono?.touched || telefono?.dirty)">
+        <div class="" *ngIf="telefono?.errors?.['required']">
+          Incompleto, Informacion requerida
+  
+        </div>
+        </div>
+  
+  
+        <div class="form-div-gen text-white">
+          <label for="email" class="form-label">Email</label>
+          <input 
+            type="email"
+            class="form-input-gen form-control"
+            id="email"
+            email="true"
+            placeholder="ingrese su Email (example@example)"
+            formControlName="email"
+            name="email"
+          />
+        </div>
+        <div class="alert alert-danger form-input-gen"
+        *ngIf="email?.invalid && (email?.touched || email?.dirty)">
+        <div class="" *ngIf="email?.errors?.['required']">
+          Incompleto, Informacion requerida
+  
+        </div>
+        </div>
+  
+  
+        <div class="form-div-gen text-white">
+          <label for="cantPers" class="form-label">Cantidad de Personas</label>
+          <input
+            type="number"
+            class="form-input-gen form-control"
+            id="cantPers"
+            placeholder="ingrese la cantidad de personas que asistiran a su evento"
+            formControlName="cantPers"
+            name="cantPers"
+          />
+        </div>
+        <div class="alert alert-danger form-input-gen"
+        *ngIf="cantPers?.invalid && (cantPers?.touched || cantPers?.dirty)">
+        <div class="" *ngIf="cantPers?.errors?.['required']">
+          Incompleto, Informacion requerida
+  
+        </div>
+        </div>
+  
+  
+        <div class="form-div-gen text-white">
+          <label for="fechaUbi" class="form-label">Fecha y Ubicacion</label>
+          <input
+            type="text"
+            class="form-input-gen form-control"
+            id="fechaUbi"
+            placeholder="ingrese la fecha y ubicacion del evento"
+            formControlName="fechaUbi"
+            name="fechaUbi"
+          />
+        </div>
+        <div class="alert alert-danger form-input-gen"
+        *ngIf="fechaUbi?.invalid && (fechaUbi?.touched || fechaUbi?.dirty)">
+        <div class="" *ngIf="fechaUbi?.errors?.['required']">
+          Incompleto, Informacion requerida
+  
+        </div>
+        </div>
+  
+  
+  
+        <div class="form-div-gen text-white">
+          <label for="details" class="form-label">Detalles</label>
+          <textarea
+            class="form-input-gen form-control"
+            id="details"
+            placeholder="Ingrese detalles sobre el evento, como el tipo de evento que va a realizar(casamiento, cumpleaños, etc)"
+            formControlName="details"
+            name="details"
+          ></textarea>
+        </div>
+        <div class="alert alert-danger form-input-gen"
+        *ngIf="details?.invalid && (details?.touched || details?.dirty)">
+        <div class="" *ngIf="details?.errors?.['required']">
+          Incompleto, Informacion requerida
+  
+        </div>
+        </div>
+  
+  
+  
+        <button type="submit" value="enviar" class="btn btn-primary m-2">Enviar</button>
+      </form>
+    </form >
+    <!--
+    <form action="https://formsubmit.co/alioli.cateringyeventos@gmail.com" method="POST"  [formGroup]="AlioliForm">
+      <div class="form-div-gen text-white">
+        <label for="name" class="form-label">Nombre y Apellido</label>
+        <input
+          type="text"
+          class="form-input-gen form-control"
+          id="name"
+          placeholder="ingrese su nombre"
+          
+          formControlName="name"
+          name="name"
+        />
+      </div>
+      <div class=" form-input-gen alert alert-danger"
+      *ngIf="name?.invalid && (name?.touched || name?.dirty)">
+      <div class="" *ngIf="name?.errors?.['required']">
+        Incompleto, Informacion requerida
+
+      </div>
+      </div>
+
+
+      <div class="form-div-gen text-white">
+        <label for="telefono" class="form-label">Telefono</label>
+        <input
+          type="number"
+          class="form-input-gen form-control"
+          id="telefono"
+          placeholder="ingrese su Telefono"
+          formControlName="telefono"
+        name="telefono"
+        />
+      </div>
+      <div class="alert alert-danger form-input-gen"
+      *ngIf="telefono?.invalid && (telefono?.touched || telefono?.dirty)">
+      <div class="" *ngIf="telefono?.errors?.['required']">
+        Incompleto, Informacion requerida
+
+      </div>
+      </div>
+
+
+      <div class="form-div-gen text-white">
+        <label for="email" class="form-label">Email</label>
+        <input 
+          type="email"
+          class="form-input-gen form-control"
+          id="email"
+          
+          placeholder="ingrese su Email (example@example)"
+          formControlName="email"
+          name="email"
+        />
+      </div>
+      <div class="alert alert-danger form-input-gen"
+      *ngIf="email?.invalid && (email?.touched || email?.dirty)">
+      <div class="" *ngIf="email?.errors?.['required']">
+        Incompleto, Informacion requerida
+
+      </div>
+      </div>
+
+
+      <div class="form-div-gen text-white">
+        <label for="cantPers" class="form-label">Cantidad de Personas</label>
+        <input
+          type="number"
+          class="form-input-gen form-control"
+          id="cantPers"
+          placeholder="ingrese la cantidad de personas que asistiran a su evento"
+          formControlName="cantPers"
+          name="cantPers"
+        />
+      </div>
+      <div class="alert alert-danger form-input-gen"
+      *ngIf="cantPers?.invalid && (cantPers?.touched || cantPers?.dirty)">
+      <div class="" *ngIf="cantPers?.errors?.['required']">
+        Incompleto, Informacion requerida
+
+      </div>
+      </div>
+
+
+      <div class="form-div-gen text-white">
+        <label for="fechaUbi" class="form-label">Fecha y Ubicacion</label>
+        <input
+          type="text"
+          class="form-input-gen form-control"
+          id="fechaUbi"
+          placeholder="ingrese la fecha y ubicacion del evento"
+          formControlName="fechaUbi"
+          name="fechaUbi"
+        />
+      </div>
+      <div class="alert alert-danger form-input-gen"
+      *ngIf="fechaUbi?.invalid && (fechaUbi?.touched || fechaUbi?.dirty)">
+      <div class="" *ngIf="fechaUbi?.errors?.['required']">
+        Incompleto, Informacion requerida
+
+      </div>
+      </div>
+
+
+
+      <div class="form-div-gen text-white">
+        <label for="details" class="form-label">Detalles</label>
+        <textarea
+          class="form-input-gen form-control"
+          id="details"
+          placeholder="Ingrese detalles sobre el evento, como el tipo de evento que va a realizar(casamiento, cumpleaños, etc)"
+          formControlName="details"
+          name="details"
+        ></textarea>
+      </div>
+      <div class="alert alert-danger form-input-gen"
+      *ngIf="details?.invalid && (details?.touched || details?.dirty)">
+      <div class="" *ngIf="details?.errors?.['required']">
+        Incompleto, Informacion requerida
+
+      </div>
+      </div>
+
+
+
+      <button type="submit" value="enviar" class="btn btn-primary m-2">Enviar</button>
+    </form>-->
+  </div>
+</div>

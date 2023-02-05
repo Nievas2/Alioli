@@ -1,1 +1,210 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	
+}
+.text-sec{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+	--color:#0e3269 ;
+	--gris: #f1ede8;
+}
+.sh{
+	box-shadow: 0px 0px 10px 0px #000;
+}
+.bac{
+	margin-left: 0;
+}
+.c{
+	background-color:var(--color);
+}
+.w{
+	background-color: var(--gris);
+}
+#center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Logo{
+	width: 230px;
+	height: 230px;
+	margin-top: 25px;
+
+}
+.delantal{
+	height: 600px; 
+    width: 500px;
+	margin-top: 2em;
+}
+
+
+
+/*
+--------------------------------------------------v
+segundo contenedor
+--------------------------------------------------v
+*/
+.seg-title{
+	font-size: (2em + 1vw);
+	line-height: 1.5em;
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+}
+/*
+--------------------------------------------------v
+tercer contenedor
+--------------------------------------------------v
+*/
+div h4{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+ .imagen11{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+/*
+--------------------------------------------------v
+cuarta contenedor
+--------------------------------------------------v
+*/
+.textos{
+	padding: 1em;
+	font-size: (2em + 1vw);
+	margin: auto;
+}
+
+/*
+--------------------------------------------------v
+contenedor general 
+--------------------------------------------------v
+*/
+
+
+.img-gen1{
+	width: 300px;
+	height: 400px;	
+	box-shadow: 0px 0px 20px 0px #000;
+
+}
+
+.img-4{
+	width: 300px;
+	height: 400px;
+	margin-top: 10px;
+}
+.pad{
+	padding: 5px;
+}
+/*
+--------------------------------------------------v
+septimo contenedor
+--------------------------------------------------v
+*/
+
+.form-text{
+
+	background: var(--color);
+	font-size: 2em;
+	
+}
+.form-text-h2 h2{
+	margin: 30px;
+	margin-top: 30px;
+	color: #fff;
+}
+
+
+
+.form{
+	padding: 30px;
+	
+}
+.form-input{
+
+	background: var(--color);	
+}
+
+.form-input-gen{
+
+	padding: 7px;
+	width: 80%;
+}
+.form-div-gen textarea{
+	min-height: 150px;
+	width: 80%;
+}
+
+/*
+--------------------------------------------------v
+OCTAVO contenedor
+--------------------------------------------------v
+*/
+
+.Logo2{
+	width: 200px;
+	height: 200px;
+}
+
+/*
+tamaños
+*/
+
+.logitos{
+	height: 50px;
+	width: 50px;
+}
+.logitos2{
+	height: 60px;
+	width: 50px;
+}
+.logitos3{
+	width: 50px;
+	height: 70px;
+}
+
+.redes h5{
+	text-align: center;
+}
+
+.redes h5{
+	font-size: calc(.5em + 1vw);
+}
+
+.pos-abs{
+	position: absolute;
+	left: 20%;
+}
+.pos-rel{
+	position: relative;
+}
+.dimens{
+	width: 300px;
+	height: 400px;
+	transform: rotate(10deg);
+	border-radius: 5px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	transition: 2s;
+}
+.dimens2{
+	transform:  rotateZ(-10deg);
+}
+@media screen and (max-width: 420px){
+	.dimens{
+	width: 200px;
+	height: 300px;
+	}
+}
