@@ -6,6 +6,9 @@
 	scroll-behavior: smooth;
 	
 }
+.html{
+	scroll-behavior: smooth;
+}
 .text-sec{
 	font-family: 'Roboto', sans-serif;
 }
@@ -156,6 +159,7 @@ OCTAVO contenedor
 .Logo2{
 	width: 200px;
 	height: 200px;
+	color: #fff;
 }
 
 /*
@@ -165,14 +169,17 @@ tamaños
 .logitos{
 	height: 50px;
 	width: 50px;
+
 }
 .logitos2{
 	height: 60px;
 	width: 50px;
+
 }
 .logitos3{
 	width: 50px;
 	height: 70px;
+
 }
 
 .redes h5{
@@ -208,3 +215,82 @@ tamaños
 	height: 300px;
 	}
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 0px 0px 8px #000;
+  z-index:100;
+} 
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:var(--gris);
+}
+
+.my-float{
+	margin-top:16px;
+}
+.enlaces{
+	color: #f1ede8;
+}
+.enlaces:hover{
+	color:#868380 ;
+	
+	text-shadow: 0px 0px 8px #000;
+}
+.imagTam{
+	transition: 2s;
+}
+.imagTam:hover{
+	transform: scale(1.1);
+}
+
+  
+  .popover__wrapper {
+	position: relative;
+	margin-top: 1.5rem;
+	display: inline-block;
+  }
+  .popover__content {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: -20px;
+	top: 90px;
+	transform: translate(0, 10px);
+	background-color: #bfbfbf;
+	padding: 1.5rem;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	width: auto;
+  }
+  .popover__content:before {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	right: calc(50% - 10px);
+	top: -8px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #bfbfbf transparent;
+	transition-duration: 0.3s;
+	transition-property: transform;
+  }
+  .popover__wrapper:hover .popover__content {
+	z-index: 10;
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0, -35px);
+	transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .popover__message {
+	text-align: center;
+  }
+  

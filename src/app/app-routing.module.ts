@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'Lunch', component:LunchComponent},
   {path:'Bebidas', component:BebidasComponent},
   {path:'CoffeeBreak', component:CoffeeBreakComponent},
-  {path:'MesaDulceCafe', component:MesaDulceCafeComponent},
+  {path:'MesaDulceCafe', component:MesaDulceCafeComponent}, 
   {path:'Pernil', component:PernilComponent},
   {path:'Servicios', component:ServiciosComponent},
   {path:'SonidoIluminacion', component:SonidoIluminacionComponent}
